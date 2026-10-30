@@ -877,6 +877,15 @@ const OPENAI_COMPATIBLE_SPEC_OVERRIDES: BuiltinSpecOverride[] = [
 		defaults: { baseUrl: "https://api.inference.crusoecloud.com/v1" },
 	},
 	{
+		id: "flexai",
+		name: "FlexAI",
+		description: "Inference cloud for open-weight models, with an EU endpoint",
+		family: "openai-compatible",
+		defaultModelId: "GLM-5.2",
+		apiKeyEnv: ["FLEXAI_API_KEY"],
+		defaults: { baseUrl: "https://api.flex.ai/v1" },
+	},
+	{
 		id: "litellm",
 		name: "LiteLLM",
 		description: "Self-hosted LLM proxy",
